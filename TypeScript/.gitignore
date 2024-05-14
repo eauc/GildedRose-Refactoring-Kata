@@ -9,3 +9,7 @@ test/**/*.js.map
 coverage
 .nyc_output
 package-lock.json
+
+# stryker temp files
+.stryker-tmp
+reports

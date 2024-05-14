@@ -6,9 +6,11 @@ export default defineConfig({
   test: {
     globals: true,
     include: ['test/vitest/**/*.{spec,test}.{js,ts}'],
+    reporters: ['verbose'],
     coverage: {
+      enabled: true,
       provider: 'istanbul',
-      reporter: ['text', 'html']
+      reporter: ['html', 'lcov']
     }
   },
 });
